@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    {% for inventory in inventories %}
+            <h5 >{{inventory.name}}</h5>
+            <p>  
+                {{inventory.store}}
+              <div>
+                {{inventory.is_empty}}
+              </div>
+              <div>
+                {{inventory.last_updated}}
+              </div>
+            </p>
+</body>
+</html>
+    {% endfor %}
